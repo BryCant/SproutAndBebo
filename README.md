@@ -1,2 +1,2 @@
-# The_Game
- Soap and Bryant team up to build a legenedary game!
+# BrySoapGameJame
+This be the repository for the 2020 GMTK Game Jam
