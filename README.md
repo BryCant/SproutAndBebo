@@ -1,2 +1,2 @@
-# BrySoapGameJame
-This be the repository for the 2020 GMTK Game Jam
+# SproutAndBebo
+This be the repository for the SproutAndBebo game
