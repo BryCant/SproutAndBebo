@@ -11,19 +11,19 @@ public class RewardSystem : MonoBehaviour
     public Transform resetPoint;
 
     // Initiate Rewards
-    static public int batteries = 0;
-    static public int berries = 0;
+    public int batteries = 0;
+    public int berries = 0;
     public float lightIntensityMultiplyer = 1;
 
     public Light2D OrbLight;
 
     // Pro Stats
-    public int maxCapacity = 10;
-    static public int currentCapacity = 0;
+    static public int maxCapacity = 10;
+    static public int currentCapacity = 10;
 
     // Orb Stats
-    public int maxCharge = 10;
-    static public int currentCharge;
+    static public int maxCharge = 10;
+    static public int currentCharge = 10;
     public float drainTimeWait = 30f;
     public float nextdrainTime = 30f;
 

@@ -280,6 +280,7 @@ GameObject:
   - component: {fileID: 3370109696519631911}
   - component: {fileID: 2128593795858530336}
   - component: {fileID: 7231912537214225757}
+  - component: {fileID: 5990528376669810853}
   m_Layer: 0
   m_Name: BouncyArea
   m_TagString: Untagged
@@ -346,3 +347,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.95, y: 2.06}
   m_EdgeRadius: 0
+--- !u!114 &5990528376669810853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7637719963702201726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8956491ae1b635246a85918014c3fc4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rockFluid: {fileID: 2128593795858530336}
+  rockPhys: {fileID: 4269663211604088136}
+  fluidBox: {fileID: 7231912537214225757}
