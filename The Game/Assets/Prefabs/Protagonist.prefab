@@ -65,7 +65,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8854397611327039429}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -91.4, y: 6.2, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.29486042, y: 0.29486042, z: 0.29486042}
   m_Children:
   - {fileID: 8854397611729393678}
@@ -302,10 +302,6 @@ MonoBehaviour:
   berries: 10
   lightIntensityMultiplyer: 1
   OrbLight: {fileID: 0}
-  maxCapacity: 10
-  currentCapacity: 10
-  maxCharge: 10
-  currentCharge: 10
   drainTimeWait: 60
   nextdrainTime: 60
   ProHealthBar: {fileID: 0}

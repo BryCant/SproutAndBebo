@@ -62,7 +62,6 @@ public class OrbBehaviour : MonoBehaviour
             }
             else if (Vector2.Distance(transform.position, target.position) > 1.0f && Vector2.Distance(transform.position, target.position) < stoppingDistance)
             {
-
                 transform.position = Vector2.MoveTowards(transform.position, target.position, (Mathf.Sqrt(Vector2.Distance(transform.position, target.position))) * 1.75f * Time.fixedDeltaTime);
             }
             else if (Vector2.Distance(transform.position, target.position) < 1.0f)
