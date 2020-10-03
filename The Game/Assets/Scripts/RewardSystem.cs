@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cinemachine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,9 @@ public class RewardSystem : MonoBehaviour
     private int attempts = 1;
 
     public Transform resetPoint;
+    public CinemachineVirtualCamera vCam1;
+    public GameObject Protagonist;
+
 
     // Initiate Rewards
     public int batteries = 0;
@@ -78,7 +82,11 @@ public class RewardSystem : MonoBehaviour
         }
         currentCapacity = berries;
         ProHealthBar.SetHealth(currentCapacity);
-        transform.position = resetPoint.position;
+        // transform.position = resetPoint.position;
+
+        Instantiate(Protagonist, resetPoint.position, resetPoint.rotation);
+        vCam1.Follow = Protagonist.transform;
+        Destroy(gameObject);
 
     }
 
@@ -98,7 +106,6 @@ public class RewardSystem : MonoBehaviour
             berries--;
             currentCapacity = berries;
             ProHealthBar.SetHealth(currentCapacity);
-            Debug.Log("uv bin shot broyo");
         }
         else if (other.gameObject.CompareTag("Battery") && batteries < maxCharge)
         {
