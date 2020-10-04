@@ -380,6 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3cb2081f8dfed4785e54ed7a134ce3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pewSound: {fileID: 8300000, guid: 9d78f13be1b7dd04da80f8be7b539a56, type: 3}
   firePoint: {fileID: 4470194996844818580}
   bulletPrefab: {fileID: 5758503027130264137, guid: 5474c27809773324ebb1b38f1193eef8,
     type: 3}
