@@ -18,6 +18,8 @@ public class BobbleBehavior : MonoBehaviour
 
     void Update()
     {
+        target = GameObject.FindGameObjectWithTag("Protagonist").GetComponent<Transform>();
+
         if (Vector2.Distance(transform.position, target.position) < 20 && rockFluid.enabled == false)
         {
             Debug.Log("wobble time");

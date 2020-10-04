@@ -27,6 +27,8 @@ public class OrbBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        target = GameObject.FindGameObjectWithTag("Protagonist").GetComponent<Transform>();
+
         horizontalMove = Input.GetAxisRaw("Horizontal");
 
         if (horizontalMove > 0)
@@ -50,7 +52,9 @@ public class OrbBehaviour : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(target.position == rp.position)
+        target = GameObject.FindGameObjectWithTag("Protagonist").GetComponent<Transform>();
+
+        if (target.position == rp.position)
         {
             transform.position = rp.position;
         }

@@ -37,6 +37,8 @@ public class RewardSystem : MonoBehaviour
 
     void Start()
     {
+        vCam1.Follow = Protagonist.transform;
+
         ProHealthBar.SetMaxHealth(maxCapacity);
         ProHealthBar.SetHealth(currentCapacity);
 
@@ -85,7 +87,7 @@ public class RewardSystem : MonoBehaviour
         // transform.position = resetPoint.position;
 
         Instantiate(Protagonist, resetPoint.position, resetPoint.rotation);
-        vCam1.Follow = Protagonist.transform;
+        // vCam1.Follow = Protagonist.transform;
         Destroy(gameObject);
 
     }
@@ -99,7 +101,6 @@ public class RewardSystem : MonoBehaviour
 
             currentCapacity = berries;
             ProHealthBar.SetHealth(currentCapacity);
-
         }
         else if (other.gameObject.CompareTag("robo_bullet") && berries > 1)
         {

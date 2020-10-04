@@ -27,6 +27,8 @@ public class FallingStalactites : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        target = GameObject.FindGameObjectWithTag("Protagonist").GetComponent<Transform>();
+
         if (Vector2.Distance(transform.position, target.position) > minProximity && Vector2.Distance(transform.position, target.position) < maxProximity)
         {
             Debug.Log("close");

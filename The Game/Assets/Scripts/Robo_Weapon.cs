@@ -25,6 +25,8 @@ public class Robo_Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        target = GameObject.FindGameObjectWithTag("Protagonist").GetComponent<Transform>();
+
         if (Time.time >= nextShootTime)
         {
             nextShootTime = Time.time + shootTimeInc;
